@@ -1,0 +1,139 @@
+    .footer_sec {
+        background-image: url('../../Assets/img/footer-bg.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        // background-position: top;
+        margin-top: 8rem;
+        .footer-content {
+            padding-top: 3rem;
+            width: 88%;
+            margin: auto;
+        }
+    }
+    
+    .footer-heading {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding-bottom: 4rem;
+        & div:last-child {
+            position: absolute;
+            left: 60%;
+            top: 28%;
+        }
+        .btn {
+            background: linear-gradient(#fff, #fff, #fff);
+        }
+        h3 {
+            color: #8F7405;
+        }
+        .signup-btn a,
+        p {
+            color: #806805;
+        }
+    }
+    
+    // media wurery 
+    @include sm-laptop {
+        .footer-heading {
+            & div:last-child {
+                left: 68%;
+                top: 28%;
+            }
+        }
+    }
+    
+    @include sm-tablet {
+        .footer-heading {
+            & div:last-child {
+                left: 72%;
+                top: 32%;
+            }
+        }
+    }
+    
+    @include mobile {
+        .footer-heading {
+            // background-color: red;
+            & div:last-child {
+                left: 28%;
+                top: 70%;
+            }
+        }
+    }
+    
+    @include sm-mobile {
+        .footer-heading {
+            & div:last-child {
+                left: 20%;
+                top: 70%;
+            }
+        }
+    }
+    
+    .footer-content {
+        .footer_links {
+            border-top: 1px solid #d3b331;
+            border-bottom: 1px solid #d3b331;
+            padding: 3.5rem 0rem;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .footer_links .footer-logo img {
+            width: 180px;
+        }
+        .footer-logo p {
+            width: 250px;
+            line-height: 25px;
+            padding-top: 0.3rem;
+        }
+        .footer_links h4 {
+            color: #4D4B45;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .footer_links a,
+        p {
+            color: #4D4B45 !important;
+            font-size: 15.2px;
+            font-style: normal;
+            font-weight: 500;
+        }
+        .footer_links a:hover {
+            color: rgb(51, 51, 51) !important;
+            text-decoration: underline;
+        }
+        .opacity {
+            opacity: 0;
+        }
+        .footer_links img {
+            width: 28px;
+            // border-radius: 0.3rem;
+        }
+        .foo-copywrite {
+            padding: 1.5rem 0rem;
+        }
+    }
+    
+    // media query
+    @include mobile {
+        .footer-content {
+            .footer_links .footer-logo img {
+                width: 130px;
+            }
+            .footer_links {
+                margin-top: 3rem;
+                padding: 2rem 0rem;
+            }
+        }
+        .social-links {
+            margin-top: 2rem;
+            // background-color: red;
+        }
+    }

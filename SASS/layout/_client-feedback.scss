@@ -1,0 +1,285 @@
+    .clients_reviews {
+        width: 88%;
+        margin: auto;
+
+        .clinet-heading {
+            position: relative;
+        }
+
+        .clinet-heading img {
+            position: absolute;
+            left: 52%;
+            top: 60%;
+            z-index: -1;
+        }
+
+        .reviews_boxes {
+            padding-top: 3rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .clients_info {
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 20px 24px;
+            background-color: #FFF;
+            border: 1px solid #E2B808;
+            border-radius: 18px;
+            // .checked {
+            //     color: rgb(197, 197, 197);
+            // }
+        }
+    }
+
+    @include sm-laptop {
+        .clients_reviews {
+            .clients_info {
+                width: 100%;
+            }
+
+            .clients_info {
+                padding: 40px 20px;
+            }
+        }
+    }
+
+    @include xl-mobile {
+        .clients_reviews {
+
+            // background-color: red;
+            .clinet-heading img {
+                left: 43%;
+                top: 30%;
+            }
+        }
+    }
+
+    @include sm-mobile {
+        .clients_reviews {
+
+            // background-color: red;
+            .clinet-heading img {
+                left: 30%;
+                top: 30%;
+            }
+        }
+    }
+
+    // social media management plan
+    .socialMedia_Sec {
+        width: 88%;
+        margin: auto;
+
+        h4 {
+            color: #E2B808;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+
+        .socialMedia_heading {
+            position: relative;
+        }
+
+        .socialMedia_heading h3 {
+            width: 45%;
+            margin: auto;
+            // background-color: red;
+            line-height: 40px;
+        }
+
+        .socialMedia_heading img {
+            position: absolute;
+            top: 7%;
+            left: 43%;
+            z-index: -1;
+
+        }
+    }
+
+    // media wuery
+    @include tablet {
+        .socialMedia_Sec {
+
+            // background-color: red;
+            .socialMedia_heading h3 {
+                width: 80%;
+            }
+
+            .socialMedia_heading img {
+                left: 30%;
+            }
+        }
+    }
+
+    @include mobile {
+        .socialMedia_Sec {
+
+            // background-color: red;
+            .socialMedia_heading h3 {
+                width: 100%;
+            }
+
+            .socialMedia_heading img {
+                left: 15%;
+            }
+        }
+    }
+
+    // plans section
+    .select_plans {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // flex-wrap: wrap;
+        gap: 15px;
+        padding-top: 3.3rem;
+
+        .plans_info {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            padding: 25px 5px 25px 20px;
+            transition: all 0.3s ease;
+        }
+
+        h3 {
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            padding-bottom: 15px;
+            border-bottom: 1.9px solid rgba(0, 0, 0, 0.20);
+            /* 130% */
+        }
+
+        h5 {
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .plans_info:hover {
+            background: #E2C444;
+        }
+
+        .plans_info:hover a {
+            background: #fff;
+        }
+    }
+
+    .plans-names p {
+        // background-color: red;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    // media query
+    @include sm-laptop {
+        .select_plans {
+            gap: 30px;
+            flex-wrap: wrap;
+
+            .plans_info {
+                width: 45%;
+                padding: 15px 5px 15px 10px;
+            }
+        }
+    }
+
+    @include sm-tablet {
+        .select_plans {
+            .plans_info {
+                width: 100%;
+                padding: 15px 5px 15px 10px;
+            }
+        }
+    }
+
+    // .
+    // add nos and extra
+    .extraPlan_sec {
+        width: 98%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        // gap: 40px;
+        // flex-wrap: wrap;
+        padding: 30px 35px;
+        margin-top: 3rem;
+
+        h5 {
+            color: #4D4B45;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25px;
+            /* 204% */
+        }
+
+        .Extra_heading {
+            justify-content: center;
+            align-items: center;
+            gap: 29px;
+
+            h5 {
+                color: #DB3FF4;
+                border-radius: 100px;
+                background: rgba(219, 63, 244, 0.10);
+                padding: 6px 20px;
+            }
+
+            p {
+                color: #4D4B45;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 0.5px;
+            }
+
+            a {
+                background-color: red !important;
+                width: 100%;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    // media query
+    @include sm-laptop {
+        .extraPlan_sec {
+            // background-color: red !important;
+            padding: 20px 10px;
+
+            h5 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 15px;
+                letter-spacing: 0px;
+            }
+        }
+
+        .divider {
+            display: none;
+        }
+    }
+
+    @include tablet {
+        .extraPlan_sec {
+            flex-direction: column;
+            align-items: start;
+            gap: 40px;
+            // background-color: red !important;
+            padding: 22px 10px;
+            padding-left: 2rem;
+        }
+    }
+

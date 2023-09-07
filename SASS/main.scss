@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Noto+Nastaliq+Urdu&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
-// utilities
 // variables
 @import "utilities/variables";
 // base
@@ -8,4 +6,10 @@
 //utilities
 @import "utilities/helpers";
 // Layout
-@import "layout/reviews";
+@import "layout/nav";
+@import "layout/hero-sec";
+@import "layout/cart-sec";
+@import "layout/our-work";
+@import "layout/client-feedback";
+@import "layout/acordian_&form";
+@import "layout/footer";

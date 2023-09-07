@@ -1,0 +1,188 @@
+.hero_sec {
+    background-image: url('../../Assets/img/bg-shedow.png');
+    // background-color: red;
+    background-position: 10px 235px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.inner-container {
+    // background-color: red;
+    width: 88%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .hero_heading {
+        position: relative;
+    }
+    .hero_heading img {
+        top: 70%;
+        left: 39.5%;
+        position: absolute;
+        // background-color: red;
+        width: 410px;
+        // height: 50px;
+        z-index: -1;
+    }
+    h3 {
+        width: 49%;
+        margin: auto;
+        // background-color: red;
+        color: #1A1501;
+        text-align: center;
+        font-family: Inter;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 57px;
+        /* 113.728% */
+    }
+    .signUp-work {
+        display: flex;
+        align-items: center;
+        img {
+            width: 27px;
+        }
+    }
+    .signUp-work a {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    p {
+        width: 595px;
+        // background-color: red;
+        color: #4D4B45;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        /* 166.667% */
+    }
+}
+
+@include laptop {
+    .hero_sec {
+        // background-color: red;
+        background-position: -50px 200px;
+    }
+    .inner-container {
+        .hero_heading img {
+            top: 55%;
+            left: 42%;
+        }
+        h3 {
+            // font-size: 46px;
+            width: 100%;
+            // background-color: red;
+        }
+        .dashboard-img {
+            margin: auto;
+            width: 100%;
+        }
+    }
+}
+
+@include sm-laptop {
+    .hero_sec {
+        // background-color: red;
+        background-position: -50px 225px;
+    }
+    .inner-container {
+        .hero_heading img {
+            top: 55%;
+            left: 42%;
+        }
+        h3 {
+            // font-size: 46px;
+            width: 100%;
+            // background-color: red;
+        }
+        .dashboard-img {
+            margin: auto;
+            width: 100%;
+        }
+    }
+}
+
+@include tablet {
+    .hero_sec {
+        // background-color: red;
+        background-position: 40px 170px;
+    }
+    .inner-container {
+        .hero_heading img {
+            top: 35%;
+            left: 30%;
+        }
+        h3 {
+            font-size: 2.4rem;
+            width: 90%;
+        }
+    }
+}
+
+@include sm-tablet {
+    .hero_sec {
+        // background-color: red;
+        background-position: 0px 370px;
+    }
+}
+
+@include xl-mobile {
+    .hero_sec {
+        // background-color: red;
+        background-position: 0px 900px;
+    }
+    .inner-container {
+        .hero_heading img {
+            top: 70%;
+            left: 25%;
+            width: 330px;
+            height: 45px;
+        }
+        h3 {
+            font-size: 2rem;
+            width: 90%;
+        }
+        p {
+            width: 90%;
+        }
+    }
+}
+
+@include sm-mobile {
+    .hero_sec {
+        // background-color: red;
+        background-position: 0px 400px;
+    }
+    .inner-container {
+        .hero_heading img {
+            top: 25%;
+            left: 6%;
+            width: 310px;
+            height: 40px;
+        }
+        h3 {
+         
+            font-size: 1.8rem;
+            // background-color: red;
+            line-height: 36px;
+            width: 90%;
+        }
+        p{
+            width: 100%;
+            // background-color: red;
+        }
+        .signUp-work {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}

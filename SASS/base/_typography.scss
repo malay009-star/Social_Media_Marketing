@@ -1,2 +1,86 @@
-// global element
-// like h1 , h2 ,h3 
+a {
+    text-decoration: none;
+}
+
+.para {
+    color: #4D4B45;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 8px;
+    font-family: Inter;
+    border: 0;
+    padding: 11px 17px 11px 16.391px;
+    background: linear-gradient(180deg, #E2B808 0%, #FFD009 100%);
+    box-shadow: 0px 4px 9px 0px rgba(102, 83, 4, 0.20);
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.performance-btn {
+    border-radius: 100px;
+    padding: 7px 21px;
+    border: 1px solid #FFCE00;
+    background: rgba(204, 166, 7, 0.15);
+    color: #E2B808;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.performance-btn:hover {
+    background: rgba(235, 191, 15, 0.17);
+}
+
+span {
+    z-index: 999;
+    color: #E2B808;
+}
+
+li {
+    list-style: none;
+}
+
+.same-heading {
+    color: #191919;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+// @include xl-mobile {
+//     .same-heading {
+//         background-color: red;
+//         font-size: 31px;
+//         // line-height: 30px;
+//     }
+// }
+@include mobile {
+    .same-heading {
+        font-size: 31px;
+        line-height: 40px;
+    }
+}
+
+@include sm-mobile {
+    .same-heading {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
